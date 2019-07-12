@@ -47,13 +47,8 @@ $page_path = "../template/pages/".$link.".php";
 ?>
 <div class="d-flex justify-content-between">
     <h5 class="mb-4 text-secondary">
-        <a class="text-dark" href="pages">Pages</a> > Edit > <?php echo $name ?>
+        <a class="text-dark" href="pages">Pages</a> > <?php echo $name ?>
     </h5>
-
-    <a data-toggle="modal" data-target="#edit_page_modal" class="text-dark" href="#">
-        <i class="far fa-edit"></i>
-        Edit
-    </a>
 
     <!-- Edit Page Modal -->
     <div class="modal fade" tabindex="-1" id="edit_page_modal">
@@ -118,9 +113,10 @@ $page_path = "../template/pages/".$link.".php";
     <div id="editorSuccess"></div>
 
     <div class="page-actions d-flex justify-content-between">
-        <a target="_blank" class="btn btn-link text-primary" href="../<?php echo $link ?>">
-            <i class="fas fa-external-link-alt"></i> View Page
-        </a>
+        <div class="btn-group">
+            <a href="../<?php echo $link ?>" target="_blank" class="btn btn-dark"><i class="fas fa-external-link-alt"></i> View</a>
+            <a href="<?php echo $page_path ?>" download data-toggle="tooltip" title="Download" class="btn btn-light active"><i class="fas fa-download"></i></a>
+        </div>
         <div class="d-flex flex-column text-center">
         <?php if (WEBSITE_DEFAULT_PAGE == $link) { echo "<h5 class='text-muted text-light'>Homepage</h5>"; } else { ?>
             <div class="btn-group">
@@ -134,13 +130,21 @@ $page_path = "../template/pages/".$link.".php";
             </div>
         <?php } ?>
         </div>
-        <form action="" method="POST">
-            <input type="hidden" name="page_ID" value="<?php echo $id ?>">
-            <input type="hidden" name="page_link" value="<?php echo $link ?>">
-            <input type="hidden" name="published_status" value="<?php echo $published ?>">
-            <input type="hidden" name="page_author" value="<?php echo $author ?>">
-            <button type="submit" name="remove_page_submit" class="btn btn-link text-danger" <?php echo $disabled; ?> onClick="return confirm('Delete this page?')">Delete Page</button>
-        </form>
+        <div class="btn-group">
+            <button type="button" data-toggle="modal" data-target="#edit_page_modal" class="btn btn-light active"><i class="far fa-edit"></i> Edit</button>
+            <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <form action="" method="POST">
+                    <input type="hidden" name="page_ID" value="<?php echo $id ?>">
+                    <input type="hidden" name="page_link" value="<?php echo $link ?>">
+                    <input type="hidden" name="published_status" value="<?php echo $published ?>">
+                    <input type="hidden" name="page_author" value="<?php echo $author ?>">
+                    <button type="submit" name="remove_page_submit" class="btn btn-link text-danger dropdown-item" <?php echo $disabled; ?> onClick="return confirm('Delete this page?')">Delete Page</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="mt-4">

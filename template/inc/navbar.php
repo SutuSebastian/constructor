@@ -11,6 +11,7 @@
             <ul class="navbar-nav ">
                 <li class="nav-item active"><a class="nav-link" href="about"><i class="fa fa-sign-in-alt"></i> About</a></li>
                 <li class="nav-item active"><a class="nav-link" href="projects"><i class="fa fa-sign-in-alt"></i> Projects</a></li>
+                <li class="nav-item active"><a class="nav-link" href="cms-admin"><i class="fas fa-user-shield"></i> cPanel</a></li>
             </ul>
         </div>
     </div>
