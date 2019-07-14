@@ -13,7 +13,7 @@ $(document).ready(function(){
               $('.monaco-editor').parent().removeClass('editor-fullscreen');
           }
       });
-      
+
       // when CTRL+S / CMD+S click -> submit save function
       editorClickSubmit = function (editor_submit_button_ID) {
           jQuery(document).keydown(function(event) {
@@ -157,7 +157,7 @@ $(document).ready(function(){
       } // END file update
 
       // link style & script edit
-      if (current_page === 'link-resources') {
+      if (current_page === 'libraries') {
 
           var link_styleVal = $('#link_styleVal').val(),
               link_scriptVal = $('#link_scriptVal').val();

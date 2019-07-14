@@ -83,9 +83,9 @@
             </a>
         </li>
         <li>
-            <a class="nav-link" title="Link Resources" href="link-resources">
+            <a class="nav-link" title="CSS & JS Libraries" href="libraries">
                 <i class="fas fa-link feather"></i>
-                <span>Link Resources</span>
+                <span>Libraries</span>
             </a>
         </li>
         <li class="nav-category">

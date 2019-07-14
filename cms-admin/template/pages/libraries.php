@@ -1,6 +1,6 @@
 <div id="editorSuccess"></div>
 <h5 class="mb-4 text-secondary">
-    Link Resources - CSS & JS Libraries
+    CSS & JS Libraries
 </h5>
 <div class="card">
     <div class="card-header bg-dark text-white p-1">
