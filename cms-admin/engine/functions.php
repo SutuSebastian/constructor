@@ -129,8 +129,8 @@ function get_title () {
       case 'footer-edit':
           $title = "Edit Footer - ". WEBSITE_TITLE;
       break;
-      case 'link-resources':
-          $title = "Link Resources - ". WEBSITE_TITLE;
+      case 'libraries':
+          $title = "CSS & JS Libraries - ". WEBSITE_TITLE;
       break;
       case 'website-settings':
           $title = "Website Settings - ". WEBSITE_TITLE;
