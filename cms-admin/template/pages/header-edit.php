@@ -11,6 +11,6 @@
         </button>
     </div>
     <div id="navbarEditor" class="editor"></div>
-    <textarea id="navbarVal" class="d-none"><?php readfile('../template/inc/navbar.php'); ?></textarea>
+    <xmp id="navbarVal" class="d-none"><?php readfile('../template/inc/navbar.php'); ?></xmp>
     <button id="update_navbar" onclick="updateEditor('navbar')" class="btn btn-dark border-top-radius-0">Update</button>
 </div>

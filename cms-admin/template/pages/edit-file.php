@@ -111,7 +111,7 @@ $file_path = "../template/assets/$file->type/$file->name.$file->type";
                 </button>
             </div>
             <div id="current_fileEditor" class="editor"></div>
-            <textarea id="fileVal" name="file_value" class="d-none"><?php readfile($file_path); ?></textarea>
+            <xmp id="fileVal" name="file_value" class="d-none"><?php readfile($file_path); ?></xmp>
             <button id="update_file" onclick="updateEditor('<?php echo $file->name ?>')" class="btn btn-dark border-top-radius-0">Update</button>
         </div>
     </div>

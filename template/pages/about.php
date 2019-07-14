@@ -1,3 +1,1 @@
-<div class='container'>
-    <h5> this is about page </h5>
-</div>
+<h1 class="cover-heading">This is the About page.</h1>

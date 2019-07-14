@@ -11,6 +11,6 @@
         </button>
     </div>
     <div id="maintenanceEditor" class="editor"></div>
-    <textarea id="maintenanceVal" class="d-none"><?php readfile('../template/pages/maintenance.php'); ?></textarea>
+    <xmp id="maintenanceVal" class="d-none"><?php readfile('../template/pages/maintenance.php'); ?></xmp>
     <button id="update_maintenance" onclick="updateEditor('maintenance')" class="btn btn-dark border-top-radius-0">Update</button>
 </div>

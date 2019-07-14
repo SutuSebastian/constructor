@@ -30,7 +30,7 @@ $(document).ready(function(){
       // function to create Monaco Editor instances
       createMonacoEditor = function (textarea_ID, editor_name, editor_div_ID, submit_post_name, monaco_language) {
 
-          var textarea_val = $('#'+ textarea_ID).val();
+          var textarea_val = $('#'+ textarea_ID).html();
 
           require.config({ paths: { 'vs': 'template/assets/ext/monaco-editor/min/vs' }});
           require(['vs/editor/editor.main'], function() {
@@ -103,7 +103,7 @@ $(document).ready(function(){
       // Specific file editor
       if (current_page === 'edit-file') {
 
-          var fileVal = $('#fileVal').val(),
+          var fileVal = $('#fileVal').html(),
               file_ID = $('#file_ID').val(),
               file_name = $('#file_name').val(),
               file_type = $('#file_type').val();
@@ -159,8 +159,8 @@ $(document).ready(function(){
       // link style & script edit
       if (current_page === 'libraries') {
 
-          var link_styleVal = $('#link_styleVal').val(),
-              link_scriptVal = $('#link_scriptVal').val();
+          var link_styleVal = $('#link_styleVal').html(),
+              link_scriptVal = $('#link_scriptVal').html();
 
           // style editor
           require.config({ paths: { 'vs': 'template/assets/ext/monaco-editor/min/vs' }});

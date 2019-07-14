@@ -11,6 +11,6 @@
         </button>
     </div>
     <div id="footerEditor" class="editor"></div>
-    <textarea id="footerVal" class="d-none"><?php readfile('../template/inc/footer.php'); ?></textarea>
+    <xmp id="footerVal" class="d-none"><?php readfile('../template/inc/footer.php'); ?></xmp>
     <button id="update_footer" onclick="updateEditor('footer')" class="btn btn-dark border-top-radius-0">Update</button>
 </div>

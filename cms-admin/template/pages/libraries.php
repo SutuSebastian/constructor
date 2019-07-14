@@ -7,12 +7,12 @@
         <h6 class="text-center m-0">Styles</h6>
     </div>
     <div id="link_styleEditor" style="height: 40vh;"></div>
-    <textarea id="link_styleVal" class="d-none"><?php readfile('../template/inc/link-style.php'); ?></textarea>
+    <xmp id="link_styleVal" class="d-none"><?php readfile('../template/inc/link-style.php'); ?></xmp>
 
     <div class="card-header bg-dark text-white p-1">
         <h6 class="text-center m-0">Scripts</h6>
     </div>
     <div id="link_scriptEditor" style="height: 40vh;"></div>
-    <textarea id="link_scriptVal" class="d-none"><?php readfile('../template/inc/link-script.php'); ?></textarea>
+    <xmp id="link_scriptVal" class="d-none"><?php readfile('../template/inc/link-script.php'); ?></xmp>
     <button id="update_resources" onclick="updateEditor()" class="btn btn-dark border-top-radius-0">Update</button>
 </div>

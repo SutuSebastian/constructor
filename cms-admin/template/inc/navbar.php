@@ -66,7 +66,7 @@
         </li>
         <li>
             <a class="nav-link" title="Media files" href="media-files">
-                <i class="far fa-file-image feather"></i>
+                <i class="fas fa-paperclip feather"></i>
                 <span>Media Files</span>
             </a>
         </li>

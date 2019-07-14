@@ -157,7 +157,7 @@ $page_path = "../template/pages/".$link.".php";
                 </button>
             </div>
             <div id="current_pageEditor" class="editor"></div>
-            <textarea id="editorVal" name="editor_value" class="d-none"><?php readfile($page_path); ?></textarea>
+            <xmp id="editorVal" name="editor_value" class="d-none"><?php readfile($page_path); ?></xmp>
             <button id="update_page" onclick="updateEditor('<?php echo $link ?>')" class="btn btn-dark border-top-radius-0">Update</button>
         </div>
     </div>

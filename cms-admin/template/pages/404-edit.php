@@ -11,6 +11,6 @@
         </button>
     </div>
     <div id="404Editor" class="editor"></div>
-    <textarea id="404Val" class="d-none"><?php readfile('../template/pages/404.php'); ?></textarea>
+    <xmp id="404Val" class="d-none"><?php readfile('../template/pages/404.php'); ?></xmp>
     <button id="update_404" onclick="updateEditor('404')" class="btn btn-dark border-top-radius-0">Update</button>
 </div>
