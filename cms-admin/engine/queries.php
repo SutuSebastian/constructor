@@ -86,14 +86,7 @@ if (isset($_POST['update_file_status']) && !empty($_POST)) {
     $file_ID     = $_POST['file_ID'];
     $file_status = $_POST['file_status'];
 
-    switch ($file_status) {
-        case '0':
-            $status = 'excluded';
-        break;
-        case '1':
-            $status = 'included';
-        break;
-    }
+    $status = $file_status == 0 ? 'excluded' : 'included';
 
     $sql  = "UPDATE files SET status=? WHERE id=?";
     $stmt = $conn->prepare($sql);

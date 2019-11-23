@@ -22,7 +22,7 @@ if (LOGGED_IN) {
                 require 'template/recovery/create-new-password.php';
             break;
             default:
-                require "template/pages/404.php";
+                require "template/pages/login.php";
             break;
         }
     } else {
