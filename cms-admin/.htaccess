@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^([^\.]+)$ index.php?page=$1 [NC,L,QSA]
+
+#Load 404 document page
+ErrorDocument 404 /cms-admin/404.php
